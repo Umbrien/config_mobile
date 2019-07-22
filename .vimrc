@@ -15,6 +15,8 @@ Plugin 'mattn/emmet-vim'
 
 "UI
 Plugin 'morhetz/gruvbox'
+Plugin 'NLKNguyen/papercolor-theme'	"light
+Plugin 'jacoborus/tender.vim'
 Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
@@ -34,7 +36,7 @@ set lazyredraw
 set number
 syntax on
 set cursorline
-colorscheme gruvbox
+colorscheme tender
 set background=dark
 
 set updatetime=100
@@ -48,8 +50,9 @@ set tabstop=1
 "lighline
  set laststatus=2
  set noshowmode
+	"theme seoul256
  let g:lightline = {
-       \ 'colorscheme': 'seoul256',
+       \ 'colorscheme': 'tender',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
