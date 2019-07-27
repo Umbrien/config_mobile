@@ -15,9 +15,11 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 
 "UI
-Plugin 'morhetz/gruvbox'
+"Plugin 'morhetz/gruvbox'
 Plugin 'NLKNguyen/papercolor-theme'	"light
 Plugin 'jacoborus/tender.vim'
+Plugin 'nightsense/snow'
+
 Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
@@ -37,8 +39,8 @@ set lazyredraw
 set number
 syntax on
 set cursorline
-colorscheme tender
 set background=dark
+colorscheme PaperColor
 
 set updatetime=100
 set tabstop=1
@@ -53,10 +55,10 @@ set tabstop=1
  set noshowmode
 	"theme seoul256
  let g:lightline = {
-       \ 'colorscheme': 'tender',
+       \ 'colorscheme': 'snow_dark',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
-       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+       \             [ 'filename', 'readonly', 'gitbranch', 'modified' ] ],
        \   'right': [ [ 'lineinfo' ],
        \              [ 'percent' ],
        \              [ 'filetype'] ]
@@ -69,6 +71,7 @@ set tabstop=1
 "NERD Tree
 let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMouseMode = 2
 
 "Emmet
 let g:user_emmet_leader_key=','
