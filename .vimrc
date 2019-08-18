@@ -9,6 +9,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'ycm-core/YouCompleteMe'
 
 "Web
 Plugin 'mattn/emmet-vim'
@@ -71,6 +72,13 @@ let NERDTreeAutoDeleteBuffer = 1
 
 "Emmet
 let g:user_emmet_leader_key=','
+
+"YouCompleteMe
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_complete_in_comments= 1
+let g:ycm_complete_in_strings = 1
+
 
 "mapping
 map <C-n> :NERDTreeToggle<CR>
