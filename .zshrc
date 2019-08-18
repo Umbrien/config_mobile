@@ -69,8 +69,6 @@ ZSH_THEME="agnoster"
 plugins=(
 								git 
 								last-working-dir #thefuck
-								colored-man-pages colorize
-								virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
