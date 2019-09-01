@@ -13,6 +13,8 @@ Plugin 'ycm-core/YouCompleteMe'
 
 "Web
 Plugin 'mattn/emmet-vim'
+Plugin 'othree/yajs.vim'
+Plugin 'mxw/vim-jsx'
 
 "UI
 "Plugin 'morhetz/gruvbox'
