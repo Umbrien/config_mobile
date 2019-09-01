@@ -38,7 +38,7 @@ set lazyredraw
 """"""""""""
 "UI
 """"""""""""
-set number
+set number relativenumber
 syntax on
 set cursorline
 set background=dark
@@ -46,6 +46,7 @@ colorscheme PaperColor
 
 set updatetime=100
 set tabstop=1
+set splitbelow splitright " open split in right side
 
 
 """"""""""""
@@ -88,3 +89,9 @@ let g:ycm_complete_in_strings = 1
 "mapping
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
+
+
+
+
+"Delete trailing whitespace on save
+								autocmd BufWritePre * %s/\s\+$//e
