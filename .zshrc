@@ -68,11 +68,15 @@ ZSH_THEME="agnoster"
 plugins=(
 								git 
 								last-working-dir
+								vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+#Delay to change to NORMAL mode 0.1s against of 0.4s
+export KEYTIMEOUT=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
