@@ -9,18 +9,17 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'ycm-core/YouCompleteMe'
 
 "Web
 Plugin 'mattn/emmet-vim'
 Plugin 'othree/yajs.vim'
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 
 "UI
-"Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 Plugin 'NLKNguyen/papercolor-theme'	"light
 Plugin 'jacoborus/tender.vim'
-Plugin 'nightsense/snow'
 
 Plugin 'itchyny/lightline.vim'
 
@@ -28,6 +27,7 @@ call vundle#end()
 filetype plugin indent on
 
 
+set noswapfile
 
 set incsearch
 set hlsearch
@@ -42,7 +42,7 @@ set number relativenumber
 syntax on
 set cursorline
 set background=dark
-colorscheme PaperColor
+colorscheme gruvbox
 
 set updatetime=100
 set tabstop=1
@@ -57,12 +57,13 @@ set splitbelow splitright " open split in right side
  set laststatus=2
  set noshowmode
 	"theme seoul256
+ "   lineinfo
  let g:lightline = {
-       \ 'colorscheme': 'snow_dark',
+       \ 'colorscheme': 'gruvbox',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
        \             [ 'filename', 'readonly', 'gitbranch', 'modified' ] ],
-       \   'right': [ [ 'lineinfo' ],
+       \   'right': [ [ '' ],
        \              [ 'percent' ],
        \              [ 'filetype'] ]
        \ },

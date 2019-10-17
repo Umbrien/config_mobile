@@ -66,7 +66,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-								git 
+								git
 								last-working-dir
 								vi-mode
 )
@@ -101,5 +101,7 @@ export KEYTIMEOUT=1
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias l.='ls -d .*'
 alias q=exit
 alias wq="echo 'Written :D' && exit"
+alias v=vi
