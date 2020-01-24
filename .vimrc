@@ -96,3 +96,6 @@ map <Leader> <Plug>(easymotion-prefix)
 
 "Delete trailing whitespace on save
 								autocmd BufWritePre * %s/\s\+$//e
+
+
+let @c="i#include <stdio.h>\<CR>\<CR>\<CR>int main() {\<CR>\<Esc>i\<Tab>"
