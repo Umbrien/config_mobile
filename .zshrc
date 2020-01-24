@@ -105,3 +105,6 @@ alias l.='ls -d .*'
 alias q=exit
 alias wq="echo 'Written :D' && exit"
 alias v=vi
+alias a=./a.out
+alias rf="rm -rf"
+alias python="python -q"
